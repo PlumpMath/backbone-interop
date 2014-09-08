@@ -1,0 +1,30 @@
+body {
+  background-color: #fff;
+}
+
+my-figure, figure {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  display: block;
+  padding:2em 0;
+  position:relative;
+  text-align:center;
+}
+
+my-figure {
+  display:block;
+  background-color: #ccc;
+}
+
+figure figcaption {
+  font-style:italic;
+}
+
+figure a:first-child {
+  font: normal 0.8em sans-serif;
+  padding: 0.5em;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
