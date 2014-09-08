@@ -1,0 +1,19 @@
+{
+  "name": "backbone-interop",
+  "version": "0.0.1",
+  "authors": [
+    "rjz <rj@rjzaworski.com>"
+  ],
+  "license": "WTFPL",
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.3.3",
+    "core-elements": "Polymer/core-elements#~0.3.3",
+    "backbone": "~1.0.0",
+    "zepto": "~1.1.3",
+    "react": "~0.11.1"
+  }
+}

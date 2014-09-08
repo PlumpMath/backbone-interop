@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interop! Backbone.View Evolved</title>
+
+    <!-- include Backbone dependencies -->
+    <script src="bower_components/zepto/zepto.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+
+    <!-- include model -->
+    <script src="scripts/model.js"></script>
+
+    <!-- include React.js. -->
+    <script src="bower_components/react/react.js"></script>
+
+    <!-- include Polymer Platform -->
+    <script src="bower_components/platform/platform.js"></script>
+    <link rel="import" href="bower_components/core-ajax/core-ajax.html" />
+
+    <link rel="stylesheet" href="styles/screen.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <% if (markup) { %><%= markup %><% } %>
+    </div>
+
+    <article class="container">
+      <ol>
+        <% _.each(contents, function (entry) { %>
+          <li>
+            <a href="<%- entry.id %>.html"><%= entry.title %></a>
+            <% if (script) { %><span class="pull-right"><a href="scripts/<%= entry.id %>.js">(source)</a></span><% } %>
+          </li>
+        <% }) %>
+      </ol>
+    </article>
+
+    <% if (script) { %><script src="<%= script %>"></script><% } %>
+
+  </body>
+</html>
+
