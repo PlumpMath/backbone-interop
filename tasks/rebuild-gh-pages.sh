@@ -12,7 +12,7 @@ git checkout master $masterDeps
 
 # Rebuild documentation and clean deps
 make docs
-cp -r docs/* .
+cp -r docs/*.html .
 
 # Make first page an index--why not?
 cp 01-*.html index.html
