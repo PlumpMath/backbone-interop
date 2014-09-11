@@ -46,7 +46,7 @@ contents.forEach(function (entry) {
   var defaults = {
     contents: contents,
     markup: '',
-    script: '../scripts/' + entry.id + '.js'
+    script: 'scripts/' + entry.id + '.js'
   };
 
   console.log('writing', dest);
