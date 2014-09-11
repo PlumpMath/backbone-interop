@@ -13,13 +13,17 @@ git checkout master $masterDeps
 # Rebuild documentation and clean deps
 make docs
 cp -r docs/* .
-rm -rf $masterDeps
+
+# Make first page an index--why not?
+cp 01-*.html index.html
+
+rm -rf 'docs Makefile tasks'
 
 # Commit and push
-#git add -A .
-#git commit -m "Rebuilds gh-pages for `git log master -1 | head -1`"
-#git push origin gh-pages
+git add -A .
+git commit -m "Rebuilds gh-pages for `git log master -1 | head -1`"
+git push origin gh-pages
 
 # Return to master
-#git checkout master
+git checkout master
 
